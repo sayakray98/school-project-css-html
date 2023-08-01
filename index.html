@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="grt-responsive-menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body> 
+      <header>
+      <div class="menu-container">
+				<div class="grt-menu-row">
+					
+					<div class="grt-menu-right">
+						<nav>
+							<button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>
+							<ul class="grt-menu">
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="About.html">About</a></li>
+								<li><a href="">Portfolio</a></li>
+								<li><a href="">Course</a></li>
+                <li><a href="">Enquiry</a></li>
+                <li><a href="">Student Zone</a></li>
+                <li><a href="">Training Center</a></li>
+                
+                <li><a href="">Online Application</a></li>
+                <li><a href="">Online Services</a></li>
+                <li><a href="">Download</a></li>
+                <li><a href="">Contact Us</a></li>
+							
+														
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+      <script>
+        (function( $ ){
+	$.fn.grtmobile = function () {
+		$('.grt-mobile-button').on('click', function(){
+			$(this).toggleClass("grt-mobile-button-open");
+			$("ul.grt-menu").toggleClass("open-grt-menu ");
+			$("html, body").toggleClass("body-overflow");
+		});
+		$('li.grt-dropdown').on('click', function(e){
+			$(this).toggleClass("active-dropdown");
+		});
+	}
+})( jQuery );
+
+// Initialize and check for mobile
+$.fn.grtmobile();
+
+
+// Add fixed class on scroll after 60px
+$(window).scroll(function(e){
+   if ($(this).scrollTop() > 60){
+       $('header').addClass('scrolled');
+   } else {
+       $('header').removeClass('scrolled');
+   }
+});
+
+// Prevent a href clicks on dropdown category item
+$('li.grt-dropdown > a').on('click', function(e){
+	e.preventDefault();
+});
+      </script>
+
+     
+      
+  </header>
+
+  <div class="share-btn-container">
+    <a href="#" class="facebook-btn">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="#" class="twitter-btn">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="#" class="pinterest-btn">
+      <i class="fab fa-pinterest"></i>
+    </a>
+
+    <a href="#" class="linkedin-btn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="#" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <!--Scripts-->
+<script></script>
+  
+       <!-- <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <div class="slides-1">
+                 <img src="images/1555320897slide1.jpg" alt="">
+            </div>
+            <div class="slides-2">
+                <img src="images/1555320913slide2.jpg" alt="">
+            </div>
+            <div class="slides-3">
+                <img src="images/1555320926slide3.jpg" alt="">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1">
+
+                </div>
+                <div class="auto-btn2">
+                    
+                </div>
+                <div class="auto-btn3">
+                    
+                </div>
+            </div>
+         
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+       </div> -->
+    <section class="slider-banner">
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+        
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="images/1555320897slide1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/1555320913slide2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/1555320926slide3.jpg" alt="">
+          </div>
+      
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+      
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+       </section>
+       <section>
+      <div class="heading">
+        <marquee direction="scroll">Netaji Subhas Computer Siksha Mission is a Unit Of The FGET.We Provide Computer Education for all to develop there computer skill. Deed No : 06195/2018 , Pan No : AADTT4438Q, CR Act : 15918/2018-CO/L & 14464/2018-CO/L, ISO Certificate No. : QMS20181138 & QMS210483, NITI Aayog unique Id : WB/2020/0264969, MSME Certificate No : WB18D0019828, NCT Delhi (PD) Certificate No : IN-DL23350829463704S, Department of Labour (Delhi) Certificate No. : 2021159470, National Career Service id : P13K69-1823368674119, NHRC No. : 3559223386, CVC No.: 9834329272 & 4989532553, AICTSD id : AICTSD/OTHER/59178, NITTSD id : NITTSD/OTHER/12543, World Human Rights Council, My gov, Icharity, RTI Online, Give India, The Institute Of Chartered Accountants of India
+        </marquee>
+      </div>
+    </section>
+    <!-- <section>
+        <div class="fbox">
+            <div class="box1">
+              <img src="images/1.png" alt="">
+              <span>Registration Verification</span>
+            </div>
+           
+            <div class="box2">
+              <img src="images/2.png" alt="">
+            </div>
+            <div class="box3">
+              <img src="images/3.png" alt="">
+            </div>
+            <div class="box4">
+              <img src="images/4.png" alt="" >
+            </div>
+            <div class="box5">
+              <img src="images/5.png" alt="">
+            </div>
+            
+        </div>
+     
+        <div class="fbox2">
+          <div class="box12">
+            <img src="images/6.png" alt="">
+
+          </div>
+         
+          <div class="box22">
+            <img src="images/7.png" alt="">
+          </div>
+          <div class="box32">
+            <img src="images/8.png" alt="">
+          </div>
+          <div class="box42">
+            <img src="images/9.png" alt="" >
+          </div>
+          <div class="box52">
+            <img src="images/10.png" alt="">
+          </div>
+          
+      </div>
+    </section> -->
+    <section class="wraperbox">
+      <div class="wrapper">
+       <ul class="boxes">
+        <li class="box">
+          <div class="img"><img src="images/1.png" alt=""></div>
+          <div class="heading"><h2 class="head1">Registration Verification</h2></div>
+        </li>
+        <li class="box">
+          <div class="img"><img src="images/2.png" alt=""></div>
+          <div class="heading"><h2 class="head2">Certification Verification</h2></div>
+        </li>
+        <li class="box">
+          <div class="img"><img src="images/3.png" alt=""></div>
+          <div class="heading"><h2 class="head3">Result Verification</h2></div>
+        </li>
+        <li class="box">
+          <div class="img"><img src="images/4.png" alt=""></div>
+          <div class="heading"><h2 class="head4">Online Test</h2></div>
+        </li>
+        <li class="box">
+          <div class="img"><img src="images/5.png" alt=""></div>
+          <div class="heading"><h2 class="head5">Download</h2></div>
+        </li>
+       </ul>
+      </div>
+      <div class="wrapper1">
+        <ul class="boxes1">
+         <li class="box1">
+           <div class="img"><img src="images/6.png" alt=""></div>
+           <div class="heading"><h2 class="head1">Our Courses</h2></div>
+         </li>
+         <li class="box1">
+           <div class="img"><img src="images/7.png" alt=""></div>
+           <div class="heading"><h2 class="head2">Gallery</h2></div>
+         </li>
+         <li class="box1">
+           <div class="img"><img src="images/8.png" alt=""></div>
+           <div class="heading"><h2 class="head3">Training Centre</h2></div>
+         </li>
+         <li class="box1">
+           <div class="img"><img src="images/9.png" alt=""></div>
+           <div class="heading"><h2 class="head4">Publication</h2></div>
+         </li>
+         <li class="box1">
+           <div class="img"><img src="images/10.png" alt=""></div>
+           <div class="heading"><h2 class="head5">Bank Details</h2></div>
+         </li>
+        </ul>
+       </div>
+
+       <div class="wrapper2">
+        <ul class="boxes2">
+         <li class="box2">
+           <div class="img"><img src="images/11 (1).png" alt=""></div>
+           <div class="heading"><h2 class="head1">Our Courses</h2></div>
+         </li>
+         <li class="box2">
+           <div class="img"><img src="images/12.png" alt=""></div>
+           <div class="heading"><h2 class="head2">Gallery</h2></div>
+         </li>
+         <li class="box2">
+           <div class="img"><img src="images/13.png" alt=""></div>
+           <div class="heading"><h2 class="head3">Training Centre</h2></div>
+         </li>
+         <li class="box2">
+           <div class="img"><img src="images/14.png" alt=""></div>
+           <div class="heading"><h2 class="head4">Publication</h2></div>
+         </li>
+        </ul>
+       </div>
+    </section>
+
+    <section class="new-sec">
+      
+      <div class="imag1">
+        <img src="images/welcome-bg.jpg" alt="">
+      </div>
+      <div class="heading">
+        <h3>WELCOME TO
+KPCSM.</h3>
+        <p>
+Kaushal Prashikshan Computer Siksha Mission (KPCSM) is a reputable institute dedicated to providing computer education and skill development. As a registered company under ISO 9001-2015, KPCSM upholds high-quality standards in its operations. The institute is committed to imparting computer education and training to individuals, equipping them with essential skills for the digital era.3</p>
+      </div>
+    </section>
+<section>
+  <div class="forms">
+    <h1>Login & Verification zone</h1>
+  <form action="action_page.php" method="post" class="form1">
+  
+    <div class="container">
+      <label for="uname"><b>Enter Your Id No.</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+    
+  
+      <button class="btn-1" type="submit">Login</button>
+      
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+  
+    
+    </div>
+  </form>
+  <form action="action_page.php" method="post" class="form2">
+    
+  
+    <div class="container">
+      <label for="uname"><b>Enter Your Enrollment No:</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+    
+  
+      <button class="btn-1" type="submit">Login</button>
+     
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+   
+    
+    </div>
+  </form>
+  <form action="action_page.php" method="post" class="form-3">
+    
+  
+    <div class="container">
+      <label for="uname"><b>Student Log in</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b></b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button class="btn-1" type="submit">Login</button>
+      
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+
+     
+    </div>
+  </form>
+  <form action="action_page.php" method="post" class="form-4">
+    
+  
+    <div class="container">
+      <label for="uname"><b>Center Log in</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b></b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button class="btn-1" type="submit">Login</button>
+     
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+
+     
+    </div>
+  </form>
+</div>
+
+  </section>
+  <section class="hovercard">
+     <h3 class="uphead">Top Ten Centre</h3>
+    <div class="cardshover">
+      <ul class="cards">
+        <li class="card">
+          <div class="img">
+            <img src="images/Advance-Certificate-Course-CSE.jpg" alt="">
+           
+          </div>
+          <div class="cardbody">
+               
+          </div>
+          <div class="heading"><h3>
+            NIMTALA NSCSM</h3></div>
+         
+
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="images/default-computer-training-institutes-7.jpg" alt="">
+          </div>
+          <div class="heading"><h3>
+            NSCSM BARUIPUR</h3></div>
+          <div class="cardtext">
+            
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="images/computer-center-6.jpg" alt="">
+          </div>
+          <div class="heading"><h3>ANNAPURNA COMPUTER CENTRE</h3></div>
+          <div class="cardtext">
+            
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="images/computer-lab-class-500x500.png" alt="">
+          </div>
+          <div class="heading"><h3>
+            BANJETIA NETAJI SUBHAS </br> COMPUTER TRANNING CENTRE</h3></div>
+          <div class="cardtext">
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="cardshover">
+      <ul class="cards">
+        <li class="card">
+          <div class="img">
+            <img src="images/DSC_00021.jpg" alt="">
+           
+          </div>
+          <div class="cardbody">
+               
+          </div>
+          <div class="heading"><h3>
+            TRIYA COMPUTER CENTER</h3></div>
+         
+
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="images/ons-computer-center-panchkula-umhwvapoit.jpg" alt="">
+          </div>
+          <div class="heading"><h3>NSCSM AGARPARA</h3></div>
+          <div class="cardtext">
+            
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="images/https-__cdn.evbuc.com_images_36071662_4623089671_1_original.jpg" alt="">
+          </div>
+          <div class="heading"><h3>
+            THE NATIONAL INSTITUTE</h3></div>
+          <div class="cardtext">
+            
+          </div>
+        </li>
+        <li class="card">
+          <div class="img">
+            <img src="images/unnamed.jpg" alt="">
+          </div>
+          <div class="heading"><h3>
+            DIGITAL NATIONAL COMPUTER </br> TRAINING CENTER</h3></div>
+          <div class="cardtext">
+            
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <section>
+    <div class="head">
+      <h1 class="students">Our Affiliation</h1>
+    </div>
+    
+  </section>
+  <section>
+   
+   
+    <link rel="stylesheet" href="style.css">
+    </head>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-center m-auto">
+          <h2 class="testimonials">Our Students</h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel -->
+            <div class="carousel-inner">
+              <div class="item carousel-item active">
+                <div class="img-box"><img src="images/1629649446KEYA KHATUN PHOTO.jpg" alt=""></div>
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                <p class="overview"><b>Jennifer Smith</b>, Office Worker</p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box"><img src="images/1629694281RESHAM AFRAJ  PHOTO.jpg" alt=""></div>
+                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                <p class="overview"><b>Dauglas McNun</b>, Financial Advisor</p>
+              </div>
+              <div class="item carousel-item">
+                <div class="img-box"><img src="images/1630418088annik photo.jpg" alt=""></div>
+                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                <p class="overview"><b>Hellen Wright</b>, Athelete</p>
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <footer class="small bg-light">
+    <div class="container py-3 py-sm-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-3">
+          <h6>Quick links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">What's new</a></li>
+            <li><a href="#">Featured Product</a></li>
+            <li><a href="#">News letter</a></li>
+            <li><a href="#">My account</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <h6>Information</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Shipping &amp; returns</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <h6>Follow us</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <address>
+            <strong>BIET Jhansi</strong><br />
+            Panchwati Hostel<br />
+            Jhansi, Uttar Pradesh<br />
+            <abbr title="Telephone">T:</abbr
+            ><a href="tel:+919876543210">(987) 654-3210</a><br />
+            <abbr title="Mail">M:</abbr
+            ><a href="mailto:info@domain.com">info@domain.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-9">
+          <ul class="list-inline">
+            <li class="list-inline-item">&copy; 2017 Web Company, Inc.</li>
+            <li class="list-inline-item">All rights reserved.</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of use and privacy policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="dropdown dropup p-0">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm dropdown-toggle"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Visit other sites:
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a href="#" class="dropdown-item">www.otherwebsite.com</a>
+              <a href="#" class="dropdown-item">www.newwebsite.com</a>
+              <a href="#" class="dropdown-item">www.oldwebsite.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  <footer>
+    <div class="footer-wrap">
+      <div class="widgetFooter">
+        <h4 class="uppercase">useful links</h4>
+        <ul id="footerUsefulLink">
+          <li title="About US">
+            <span class="usefulLinksIcons">
+              <i class="far fa-id-card"></i>
+            </span>
+            <a>&nbsp;About us</a>
+          </li>
+          <li title="Our Team">
+            <span class="usefulLinksIcons">
+              <i class="far fa-handshake"></i>
+            </span>
+            <a>&nbsp;Our team</a>
+          </li>
+          <li title="Gallery">
+            <span class="usefulLinksIcons">
+              <i class="far fa-images"></i>
+            </span>
+            <a>&nbsp;Gallery</a>
+          </li>
+          <li title="Contact Us">
+            <span class="usefulLinksIcons">
+              <i class="far fa-envelope"></i>
+            </span>
+            <a>&nbsp;Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="widgetFooter" id="footerLogo">
+        <img src="Assets/images/Lineage_OS_Logo.png" alt="Logo">
+      </div>
+      <div class="widgetFooter">
+        <h4 class="uppercase">Social media links</h4>
+        <ul id="footerMediaLinks">
+          <li class="media1" title="Facebook">
+            <span class="mediaLinksIcons fb">
+              <i class="fab fa-facebook-square"></i>
+            </span>
+            <a class="fb">&nbsp;facebook</a>
+          </li>
+          <li class="media2" title="Twitter">
+            <span class="mediaLinksIcons twit">
+              <i class="fab fa-twitter-square"></i>
+            </span>
+            <a class="twit">&nbsp;Twitter</a>
+          </li>
+          <li class="media3"  title="Instagram">
+            <span class="mediaLinksIcons insta">
+              <i class="fab fa-instagram"></i>
+            </span>
+            <a class="insta">&nbsp;instagram</a>
+          </li>
+      
+        </ul>
+      </div>
+      
+
+<div class="container">
+  <h3>Enquiry Form</h3>
+  <form action="/action_page.php">
+    <label for="fname"></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    </div>
+    <div class="footerCopy">
+      <div class="inb">
+        <p>Copyrights<sup>&copy;</sup> 2018. Developed with <i class="fas fa-heart" style="color: red;"></i> by ABC & team</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <script src="school.js"></script>
+      <script src="grt-responsive-menu.js"></script>
+    
+</body>
+</html>
